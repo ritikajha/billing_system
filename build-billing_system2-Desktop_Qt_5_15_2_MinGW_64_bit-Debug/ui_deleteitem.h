@@ -29,6 +29,7 @@ public:
     QLineEdit *prod_id;
     QLabel *label;
     QPushButton *btnDELETE;
+    QLabel *lblInfo_2;
 
     void setupUi(QDialog *deleteItem)
     {
@@ -73,6 +74,10 @@ public:
         btnDELETE->setAutoFillBackground(false);
         btnDELETE->setStyleSheet(QString::fromUtf8("background-color: rgb(255, 0, 0);"));
         btnDELETE->setFlat(false);
+        lblInfo_2 = new QLabel(deleteItem);
+        lblInfo_2->setObjectName(QString::fromUtf8("lblInfo_2"));
+        lblInfo_2->setGeometry(QRect(0, 0, 141, 16));
+        lblInfo_2->setStyleSheet(QString::fromUtf8("color: rgb(0, 0, 255);"));
 
         retranslateUi(deleteItem);
 
@@ -88,6 +93,7 @@ public:
         lblInfo->setText(QString());
         label->setText(QCoreApplication::translate("deleteItem", "Product Id: ", nullptr));
         btnDELETE->setText(QCoreApplication::translate("deleteItem", "Delete", nullptr));
+        lblInfo_2->setText(QString());
     } // retranslateUi
 
 };

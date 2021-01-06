@@ -33,7 +33,7 @@
    <widget class="QPushButton" name="pushButton_2">
     <property name="geometry">
      <rect>
-      <x>420</x>
+      <x>160</x>
       <y>90</y>
       <width>211</width>
       <height>131</height>
@@ -56,16 +56,17 @@
      </rect>
     </property>
     <property name="styleSheet">
-     <string notr="true">color: rgb(0, 0, 255);</string>
+     <string notr="true">color: rgb(0, 0, 255);
+font-size: 15px</string>
     </property>
     <property name="text">
-     <string>  Developed By Ritika Jha and Rohan kumar                                                                                     Guided by: Prof. Mukesh Giluka</string>
+     <string>  Developed By Ritika Jha and Rohan kumar                                                      Guided by: Prof. Mukesh Giluka</string>
     </property>
    </widget>
    <widget class="QPushButton" name="pushButton">
     <property name="geometry">
      <rect>
-      <x>160</x>
+      <x>420</x>
       <y>90</y>
       <width>211</width>
       <height>131</height>
@@ -81,8 +82,8 @@
    <widget class="QPushButton" name="pushButton_3">
     <property name="geometry">
      <rect>
-      <x>160</x>
-      <y>250</y>
+      <x>420</x>
+      <y>410</y>
       <width>211</width>
       <height>131</height>
      </rect>
@@ -108,14 +109,14 @@
 font: 22pt &quot;MS Shell Dlg 2&quot;;</string>
     </property>
     <property name="text">
-     <string>Super Market Billing System</string>
+     <string>&lt;u&gt;Super Market Billing System&lt;/u&gt;</string>
     </property>
    </widget>
    <widget class="QPushButton" name="pushButton_5">
     <property name="geometry">
      <rect>
       <x>160</x>
-      <y>410</y>
+      <y>250</y>
       <width>211</width>
       <height>131</height>
      </rect>
@@ -130,7 +131,7 @@ font: 22pt &quot;MS Shell Dlg 2&quot;;</string>
    <widget class="QPushButton" name="pushButton_6">
     <property name="geometry">
      <rect>
-      <x>420</x>
+      <x>160</x>
       <y>410</y>
       <width>211</width>
       <height>131</height>

@@ -1,3 +1,4 @@
+debug/currency.o
 debug/customerdetail.o
 debug/deleteitem.o
 debug/main.o
@@ -5,14 +6,17 @@ debug/mainwindow.o
 debug/additem.o
 debug/management.o
 debug/sell.o
+debug/selladditem.o
 debug/totalstock.o
 debug/updateitem.o
 debug/mydb.o
+debug/moc_currency.o
 debug/moc_customerdetail.o
 debug/moc_deleteitem.o
 debug/moc_mainwindow.o
 debug/moc_additem.o
 debug/moc_management.o
 debug/moc_sell.o
+debug/moc_selladditem.o
 debug/moc_totalstock.o
 debug/moc_updateitem.o

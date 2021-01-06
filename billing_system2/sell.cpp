@@ -7,13 +7,17 @@ sell::sell(QWidget *parent) :
 {
     ui->setupUi(this);
 
-
+    ptrSellAddItem = new selladditem(this);
+    ui->btnADD->setHidden(true);
+    ui->btnGENERATE->setHidden(true);
+    ui->label_3->setHidden(true);
 
 }
 
 sell::~sell()
 {
     delete ui;
+    delete ptrSellAddItem;
 }
 
 
@@ -22,39 +26,6 @@ void sell::Show()
     this->show();
 }
 
-//void sell::on_btnAdd_clicked()
-//{
-//    ui->lblInfo->setText("");
-//    QString sName = ui->txtName->text();
-//    QString sQuantity = ui->txtQuantity->text();
-//    QString sStatus = ui->cmbStatus->currentText();
-//    QString sDOP = ui->txtDOP->text();
-//    QString sDOS = ui->txtDOS->text();
-//    QString sSellingPrice = ui->txtSellingPrice->text();
-//    QString sPurchasePrice = ui->txtPurchasePrice->text();
-
-//    QSqlQuery query(MyDB::getInstance()->getDBInstance());
-//    query.clear();
-//    query.prepare("insert into cppbuzz_items(Name, Quantity, Status, DOP, DOS, SellingPrice, PurchasePrice) values ('" +sName +"','" +sQuantity + "','"+ sStatus + "','" +sDOP + "','"+ sDOS+ "','"+sSellingPrice+ "','"+ sPurchasePrice + "')");
-
-//    if(!query.exec())
-//    {
-//        qDebug() << query.lastError().text() << query.lastQuery();
-//        ui->lblInfo->setText("Unable to Add Item");
-//    }
-//    else
-//    {
-//        if(query.numRowsAffected() > 0)
-//        {
-//            qDebug() <<"read was successful "<< query.lastQuery();
-//            ui->lblInfo->setText("Item Added Successfully!");
-//            resetElements();
-//        }
-//        else
-//            qDebug() <<"Unable to Add new Item";
-//     }
-
-//}
 
 void sell::resetElements()
 {
@@ -92,10 +63,15 @@ void sell::on_btnFETCH_clicked()
                       ui->label_phone->setText(phone_no);
                       query.clear();
                       query.prepare("update customer set visit = visit+1 where phone = '" + phone_no + "'");
-                      if(!query.exec())
+                      if(!query.exec()){
                          qDebug() << query.lastError().text() << query.lastQuery();
-                      else
+                      }else{
+
                          qDebug() << "== Please start the Bill";
+                         ui->btnGENERATE->setHidden(false);
+                         ui->btnADD->setHidden(false);
+                             ui->label_3->setHidden(false);
+                      }
 
                       while(query.next())
                       qDebug()<<query.value(0).toString();
@@ -105,14 +81,18 @@ void sell::on_btnFETCH_clicked()
          }else{
                       qDebug() << "== unable to fetch";
                       ui->lblInfo->setText("Customer is not in database");
-
+                      ui->label_name->setText(name);
+                      ui->label_phone->setText(phone_no);
                       query.clear();
                       query.prepare("insert into customer (name, phone, visit) values ('" + name + "','" + phone_no + "',1"  ")");
-                      if(!query.exec())
+                      if(!query.exec()){
                          qDebug() << query.lastError().text() << query.lastQuery();
-                      else
+                      }else{
                          qDebug() << "== new customer added";
-
+                          ui->btnGENERATE->setHidden(false);
+                          ui->btnADD->setHidden(false);
+                          ui->label_3->setHidden(false);
+                       }
                       while(query.next())
                       qDebug()<<query.value(0).toString();
 
@@ -159,4 +139,10 @@ void sell::on_btnFETCH_clicked()
    //            qDebug() <<"Unable to Add new Item";
    //     }
 
+}
+
+
+void sell::on_btnADD_clicked()
+{
+    ptrSellAddItem->show();
 }

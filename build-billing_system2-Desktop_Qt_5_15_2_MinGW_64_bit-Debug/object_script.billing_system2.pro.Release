@@ -1,3 +1,4 @@
+release/currency.o
 release/customerdetail.o
 release/deleteitem.o
 release/main.o
@@ -5,14 +6,17 @@ release/mainwindow.o
 release/additem.o
 release/management.o
 release/sell.o
+release/selladditem.o
 release/totalstock.o
 release/updateitem.o
 release/mydb.o
+release/moc_currency.o
 release/moc_customerdetail.o
 release/moc_deleteitem.o
 release/moc_mainwindow.o
 release/moc_additem.o
 release/moc_management.o
 release/moc_sell.o
+release/moc_selladditem.o
 release/moc_totalstock.o
 release/moc_updateitem.o

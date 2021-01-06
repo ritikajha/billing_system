@@ -12,6 +12,7 @@ MainWindow::MainWindow(QWidget *parent) :
     ptrSell = new sell(this);
     ptrManagement = new management(this);
     ptrCustomerDetail = new customerdetail(this);
+    ptrCurrency = new currency(this);
 
 }
 
@@ -23,6 +24,7 @@ MainWindow::~MainWindow()
     delete ptrSell;
     delete ptrManagement;
     delete ptrCustomerDetail;
+    delete  ptrCurrency;
     MyDB::ResetInstance();
 }
 
@@ -45,4 +47,9 @@ void MainWindow::on_pushButton_5_clicked()
 void MainWindow::on_pushButton_4_clicked()
 {
     ptrCustomerDetail->Show();
+}
+
+void MainWindow::on_pushButton_6_clicked()
+{
+    ptrCurrency->show();
 }

@@ -14,6 +14,7 @@
 #include "sell.h"
 #include "management.h"
 #include "customerdetail.h"
+#include "currency.h"
 
 namespace Ui {
 class MainWindow;
@@ -38,6 +39,8 @@ private slots:
 
     void on_pushButton_4_clicked();
 
+    void on_pushButton_6_clicked();
+
 private:
     Ui::MainWindow *ui;
 
@@ -45,6 +48,7 @@ private:
     sell *ptrSell;
     management *ptrManagement;
     customerdetail *ptrCustomerDetail;
+    currency *ptrCurrency;
 
 
 };
