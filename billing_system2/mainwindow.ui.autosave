@@ -60,7 +60,7 @@
 font-size: 15px</string>
     </property>
     <property name="text">
-     <string>  Developed By Ritika Jha and Rohan kumar                                                      </string>
+     <string>  Developed By Ritika Jha and Rohan kumar                                                      Guided by: Prof. Mukesh Giluka</string>
     </property>
    </widget>
    <widget class="QPushButton" name="pushButton">
