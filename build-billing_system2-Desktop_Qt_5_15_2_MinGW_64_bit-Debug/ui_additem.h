@@ -59,7 +59,7 @@ public:
         lblInfo = new QLabel(AddItem);
         lblInfo->setObjectName(QString::fromUtf8("lblInfo"));
         lblInfo->setGeometry(QRect(180, 290, 141, 16));
-        lblInfo->setStyleSheet(QString::fromUtf8("color: rgb(255, 0, 0);"));
+        lblInfo->setStyleSheet(QString::fromUtf8("color: rgb(0, 0, 255);"));
         formLayoutWidget = new QWidget(AddItem);
         formLayoutWidget->setObjectName(QString::fromUtf8("formLayoutWidget"));
         formLayoutWidget->setGeometry(QRect(60, 50, 391, 201));

@@ -20,6 +20,7 @@ DEFINES += QT_DEPRECATED_WARNINGS
 CONFIG += c++11
 
 SOURCES += \
+    customerdetail.cpp \
     deleteitem.cpp \
         main.cpp \
         mainwindow.cpp \
@@ -31,6 +32,7 @@ SOURCES += \
     mydb.cpp
 
 HEADERS += \
+    customerdetail.h \
     deleteitem.h \
         mainwindow.h \
     additem.h \
@@ -41,6 +43,7 @@ HEADERS += \
     mydb.h
 
 FORMS += \
+    customerdetail.ui \
     deleteitem.ui \
         mainwindow.ui \
     additem.ui \

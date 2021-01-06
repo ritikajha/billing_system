@@ -23,7 +23,7 @@
     </rect>
    </property>
    <property name="styleSheet">
-    <string notr="true">color: rgb(255, 0, 0);</string>
+    <string notr="true">color: rgb(0, 0, 255);</string>
    </property>
    <property name="text">
     <string/>

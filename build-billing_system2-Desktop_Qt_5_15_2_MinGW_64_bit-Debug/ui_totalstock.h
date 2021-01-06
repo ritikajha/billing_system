@@ -26,10 +26,10 @@ public:
     {
         if (totalstock->objectName().isEmpty())
             totalstock->setObjectName(QString::fromUtf8("totalstock"));
-        totalstock->resize(499, 429);
+        totalstock->resize(793, 395);
         tableView = new QTableView(totalstock);
         tableView->setObjectName(QString::fromUtf8("tableView"));
-        tableView->setGeometry(QRect(10, 20, 471, 391));
+        tableView->setGeometry(QRect(10, 10, 771, 351));
 
         retranslateUi(totalstock);
 
@@ -38,7 +38,7 @@ public:
 
     void retranslateUi(QDialog *totalstock)
     {
-        totalstock->setWindowTitle(QCoreApplication::translate("totalstock", "Dialog", nullptr));
+        totalstock->setWindowTitle(QCoreApplication::translate("totalstock", "Stock Report", nullptr));
     } // retranslateUi
 
 };

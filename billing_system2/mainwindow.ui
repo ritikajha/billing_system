@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>752</width>
-    <height>592</height>
+    <width>807</width>
+    <height>594</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -17,7 +17,7 @@
    <widget class="QPushButton" name="pushButton_4">
     <property name="geometry">
      <rect>
-      <x>400</x>
+      <x>420</x>
       <y>250</y>
       <width>211</width>
       <height>131</height>
@@ -33,7 +33,7 @@
    <widget class="QPushButton" name="pushButton_2">
     <property name="geometry">
      <rect>
-      <x>400</x>
+      <x>420</x>
       <y>90</y>
       <width>211</width>
       <height>131</height>
@@ -49,9 +49,9 @@
    <widget class="QLabel" name="label_statusbar_1">
     <property name="geometry">
      <rect>
-      <x>0</x>
+      <x>20</x>
       <y>560</y>
-      <width>751</width>
+      <width>771</width>
       <height>20</height>
      </rect>
     </property>
@@ -59,13 +59,13 @@
      <string notr="true">color: rgb(0, 0, 255);</string>
     </property>
     <property name="text">
-     <string>  Developed By Ritika Jha and Rohan kumar                                                                                 Guided by: Prof. Mukesh Giluka</string>
+     <string>  Developed By Ritika Jha and Rohan kumar                                                                                     Guided by: Prof. Mukesh Giluka</string>
     </property>
    </widget>
    <widget class="QPushButton" name="pushButton">
     <property name="geometry">
      <rect>
-      <x>140</x>
+      <x>160</x>
       <y>90</y>
       <width>211</width>
       <height>131</height>
@@ -81,7 +81,7 @@
    <widget class="QPushButton" name="pushButton_3">
     <property name="geometry">
      <rect>
-      <x>140</x>
+      <x>160</x>
       <y>250</y>
       <width>211</width>
       <height>131</height>
@@ -97,7 +97,7 @@
    <widget class="QLabel" name="label">
     <property name="geometry">
      <rect>
-      <x>170</x>
+      <x>190</x>
       <y>10</y>
       <width>461</width>
       <height>51</height>
@@ -114,7 +114,7 @@ font: 22pt &quot;MS Shell Dlg 2&quot;;</string>
    <widget class="QPushButton" name="pushButton_5">
     <property name="geometry">
      <rect>
-      <x>140</x>
+      <x>160</x>
       <y>410</y>
       <width>211</width>
       <height>131</height>
@@ -130,7 +130,7 @@ font: 22pt &quot;MS Shell Dlg 2&quot;;</string>
    <widget class="QPushButton" name="pushButton_6">
     <property name="geometry">
      <rect>
-      <x>400</x>
+      <x>420</x>
       <y>410</y>
       <width>211</width>
       <height>131</height>

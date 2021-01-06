@@ -38,7 +38,7 @@ public:
         lblInfo = new QLabel(deleteItem);
         lblInfo->setObjectName(QString::fromUtf8("lblInfo"));
         lblInfo->setGeometry(QRect(160, 180, 141, 16));
-        lblInfo->setStyleSheet(QString::fromUtf8("color: rgb(255, 0, 0);"));
+        lblInfo->setStyleSheet(QString::fromUtf8("color: rgb(0, 0, 255);"));
         formLayoutWidget = new QWidget(deleteItem);
         formLayoutWidget->setObjectName(QString::fromUtf8("formLayoutWidget"));
         formLayoutWidget->setGeometry(QRect(70, 100, 351, 31));
